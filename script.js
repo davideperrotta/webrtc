@@ -80,7 +80,7 @@ function joinRoom() {
     peer.on('open', (id) => {
         console.log("Connected room with Id: " + id)
 
-        getUserMedia({ video: true, audio: false }, (stream) => {
+        getUserMedia({ video: true, audio: true }, (stream) => {
             local_stream = stream;
             setLocalStream(local_stream)
             notify("Joining peer")
