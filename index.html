@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="dist/w3.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 
     <title>Screen sharing using WebRTC and PeerJS</title>
 </head>
@@ -25,7 +26,7 @@
                 <input id="room-input" type="text" class="form-control" placeholder="Room ID">
                 <br>
                 <div class="w3-col w3-margin">
-                    <button type="submit" class="w3-button w3-black" onclick="createRoom()">Create Room</button>
+                    <button type="submit" class="w3-button w3-grey" onclick="createRoom()">Create Room</button>
                     <button type="submit" class="w3-button w3-green" onclick="joinRoom()">Join Room</button>
                     <!--<button type="submit" class="w3-button w3-grey" onclick="joinRoomWithoutCamShareScreen()">Join
                         Room (without webcam, auto screenshare)</button>-->
@@ -49,10 +50,10 @@
                     <video height="300" id="local-video" controls class="local-video"></video>
                 </div>
                 <div class="w3-row">
-                    <div class="w3-col"><button type="submit" onclick="startScreenShare()">Share Screen</button></div>
+                    <div class="w3-col"><button class="w3-button w3-blue" type="submit" onclick="startScreenShare()">Share Screen</button></div>
                 </div>
             </div>
-            <div class="w3-col" id="screenshare-container" hidden>
+            <div class="w3-col s5" id="screenshare-container" hidden>
                 <div class="w3-row">
                     <div class="w3-col">
                         <h2>Screen Shared Stream</h2>
@@ -68,7 +69,7 @@
                     </div>
                 </div> -->
             </div>
-            <div class="w3-col" id="remote-vid-container" hidden>
+            <div class="w3-col s5" id="remote-vid-container" hidden>
                 <div class="w3-row">
                     <div class="w3-col">
                         <h2>Remote Stream</h2>
@@ -80,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="w3-col" id="local-mdeia-container" hidden>
+            <div class="w3-col s5" id="local-mdeia-container" hidden>
                 <div class="w3-row">
 
                     <div class="w3-col">
